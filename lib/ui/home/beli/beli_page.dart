@@ -16,7 +16,7 @@ class BeliPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: StaticData.bgColor,
       appBar: AppBar(
-        title: Text("Pilih Barang"),
+        title: Text("Beli Mobil"),
       ),
       body: Stack(
         children: [
