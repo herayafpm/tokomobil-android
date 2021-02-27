@@ -2,7 +2,7 @@
     package="com.app079.tokomobil">
   <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="Toko Mobil 079"
+        android:label="Toko Mobil 076"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

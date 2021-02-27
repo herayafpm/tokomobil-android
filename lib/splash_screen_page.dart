@@ -19,7 +19,7 @@ class SplashScreenPage extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Txt(
-                        "Toko Mobil 079",
+                        "Toko Mobil 076",
                         style: TxtStyle()
                           ..textColor(StaticData.textColor)
                           ..fontSize(14.ssp)

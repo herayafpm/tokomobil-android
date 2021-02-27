@@ -52,7 +52,7 @@ class App extends StatelessWidget {
     return ScreenUtilInit(
       designSize: Size(StaticData.screenWidth, StaticData.screenHeight),
       builder: () => GetMaterialApp(
-          title: "Tes Online 129",
+          title: "Toko Mobile 076",
           debugShowCheckedModeBanner: false,
           initialRoute: '/',
           theme: appThemeData,
