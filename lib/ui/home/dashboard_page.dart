@@ -48,8 +48,19 @@ class DashboardPage extends StatelessWidget {
                   ..padding(horizontal: 20, top: 20, bottom: 10),
               ),
               Obx(
-                () => (controller.role.value == 2)
+                () => (controller.role.value == 1)
                     ? Expanded(
+                        child: ListView(
+                          children: [
+                            controller.tileDefault(
+                                title: "Riwayat Transaksi",
+                                onTap: () {
+                                  Get.toNamed("/admin/beli/riwayat");
+                                }),
+                          ],
+                        ),
+                      )
+                    : Expanded(
                         child: ListView(
                           children: [
                             controller.tileDefault(
@@ -57,10 +68,15 @@ class DashboardPage extends StatelessWidget {
                                 onTap: () {
                                   Get.toNamed("/user/beli");
                                 }),
+                            SizedBox(height: 5),
+                            controller.tileDefault(
+                                title: "Riwayat Pembelian",
+                                onTap: () {
+                                  Get.toNamed("/user/beli/riwayat");
+                                }),
                           ],
                         ),
-                      )
-                    : Container(),
+                      ),
               ),
             ],
           ),

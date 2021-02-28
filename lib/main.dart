@@ -19,6 +19,10 @@ import 'package:tokomobil/ui/home/akun/ubah_password_profile_page.dart';
 import 'package:tokomobil/ui/home/akun/ubah_profile_page.dart';
 import 'package:tokomobil/ui/home/beli/beli_detail_page.dart';
 import 'package:tokomobil/ui/home/beli/beli_page.dart';
+import 'package:tokomobil/ui/home/beli/beli_proses_page.dart';
+import 'package:tokomobil/ui/home/beli/riwayat/beli_riwayat_detail_page.dart';
+import 'package:tokomobil/ui/home/beli/riwayat/beli_riwayat_page.dart';
+import 'package:tokomobil/ui/home/beli/riwayat_admin/admin_beli_riwayat_page.dart';
 import 'package:tokomobil/ui/home/home_page.dart';
 
 void main() async {
@@ -77,6 +81,14 @@ class App extends StatelessWidget {
                 page: () => UbahPasswordProfilePage()),
             GetPage(name: "/user/beli", page: () => BeliPage()),
             GetPage(name: "/user/beli/detail", page: () => BeliDetailPage()),
+            GetPage(name: "/user/beli/proses", page: () => BeliProsesPage()),
+            GetPage(
+                name: "/admin/beli/riwayat",
+                page: () => AdminBeliRiwayatPage()),
+            GetPage(name: "/user/beli/riwayat", page: () => BeliRiwayatPage()),
+            GetPage(
+                name: "/user/beli/riwayat/detail",
+                page: () => BeliRiwayatDetailPage()),
           ]),
     );
   }
